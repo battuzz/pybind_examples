@@ -1,0 +1,13 @@
+[build-system]
+requires = ["scikit_build_core", "pybind11"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "test_package"
+version = "0.0.1"
+requires-python = ">=3.7"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = ["tests", "integration"]
